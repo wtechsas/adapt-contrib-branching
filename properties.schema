@@ -1,0 +1,84 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "http://jsonschema.net",
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "properties": {
+        "course": {
+          "type": "object",
+          "properties": {
+            "_branching": {
+              "type": "object",
+              "legend": "Ramificación",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "default": true,
+                  "title": "Habilitar la ramificación globalmente",
+                  "inputType": "Checkbox"
+                }
+              }
+            }
+          }
+        },
+        "article": {
+          "type": "object",
+          "properties": {
+            "_branching": {
+              "type": "object",
+              "legend": "Ramificación",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "default": false,
+                  "title": "Habilitar ramificación dentro de este artículo",
+                  "inputType": "Checkbox"
+                }
+              }
+            }
+          }
+        },
+        "block": {
+          "type": "object",
+          "properties": {
+            "_branching": {
+              "type": "object",
+              "legend": "Ramificación",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "default": true,
+                  "title": "Habilitar bifurcación hacia/desde este bloque",
+                  "inputType": "Checkbox"
+                },
+                "_correct": {
+                  "type": "string",
+                  "default": "",
+                  "title": "Si está correcto",
+                  "inputType": "Text",
+                  "help": "Siguiente bloque para procesar si todas las preguntas en este bloque se respondieron correctamente"
+                },
+                "_partlyCorrect": {
+                  "type": "string",
+                  "default": "",
+                  "title": "Parcialmente correcto",
+                  "inputType": "Text",
+                  "help": "Siguiente bloque para procesar si todas las preguntas en este bloque se responden parcialmente correctamente"
+                },
+                "_incorrect": {
+                  "type": "string",
+                  "default": "",
+                  "title": "Incorrecto",
+                  "inputType": "Text",
+                  "help": "Siguiente bloque para procesar si todas las preguntas en este bloque se responden incorrectamente"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

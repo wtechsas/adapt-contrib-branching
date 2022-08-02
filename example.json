@@ -1,0 +1,23 @@
+// course.json
+  "_branching": {
+    "_isEnabled": true
+  }
+
+// articles.json
+
+  "_branching": {
+    "_isEnabled": true,
+    "_onChildren": true,
+    "_start": "b-250"
+  },
+
+// blocks.json
+
+  "_branching": {
+    "_isEnabled": true,
+    "_containerId": "",
+    "__comment": "leave _containerId blank to use the article _id",
+    "_correct": "b-255",
+    "_partlyCorrect": "b-260",
+    "_incorrect": "b-270"
+  }
