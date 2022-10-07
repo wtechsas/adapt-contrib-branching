@@ -1,6 +1,6 @@
 {
   "name": "adapt-contrib-branching",
-  "version": "10.0.9",
+  "version": "10.1.0",
   "framework": ">=5.19.1",
   "homepage": "https://github.com/wtechsas/adapt-contrib-branching",
   "issues": "https://github.com/wtechsas/adapt_framework/issues/new",
